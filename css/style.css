@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, button, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Basic Codes */
+
+body {
+  font: 16px "Permanent Marker", cursive;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+main{
+  padding-inline: 2em;
+}
+
+.flex_column_center {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.flex_column_center_img{
+  max-width: 500px;
+  border: #fff 3px solid;
+}
+
+.flex_column_center_img img{
+  width: 100%;
+}
+
+.flex_column_center iframe{
+  width: 100%;
+}
+
+.flex_row_center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_no_wrap_row_center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo, Title and Description Codes */
+
+.header_img {
+  padding-top: 1em;
+}
+
+.header_img img {
+  height: 140px;
+  width: 140px;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+}
+
+.header_text h2 {
+  color: #f1c40f;
+  font-size: 1.3em;
+}
+
+/* Social Media Icons Codes */
+
+.header_svg_list {
+  padding-top: 1em;
+}
+
+.header_svg_item {
+  width: 2.1em;
+  height: 2.1em;
+  cursor: pointer;
+}
+
+.header_svg_item:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease;
+}
+
+.header_svg_item + .header_svg_item {
+  margin-left: 1em;
+}
+
+/* Menu Codes */
+
+#header_nav_menu_item_1 {
+  color: #f1c40f;
+}
+
+#header_nav_menu_item_2,
+#header_nav_menu_item_3 {
+  color: #fff;
+}
+
+.header_nav_menu_list {
+  padding-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.header_nav_menu_item {
+  color: #fff;
+  background-color: #0e0e0e;
+  text-align: center;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: 0.1s ease;
+  font-size: 1.1em;
+}
+
+.header_nav_menu_item + .header_nav_menu_item {
+  margin-left: 0.4em;
+}
+
+/* Menu Container Codes */
+
+main {
+  margin-bottom: auto;
+}
+
+#main_section_container_2,
+#main_section_container_3 {
+  display: none;
+}
+
+/* Footer Codes */
+
+.footer_div_item {
+  color: #fff;
+  background: #0e0e0e;
+  padding: 1em;
+  margin-top: 1.5em;
+}
+
+.footer_a_item {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+/* Responsive Codes */
+
+@media (max-width: 768px) {
+  .main_text_item {
+    width: 92vw;
+  }
+
+  .main_small_button_item {
+    width: calc(92vw / 2 - 5px);
+  }
+
+  .main_button_item {
+    width: 92vw;
+  }
+
+  .header_h_item {
+    width: 92vw;
+    text-align: center;
+  }
+}
